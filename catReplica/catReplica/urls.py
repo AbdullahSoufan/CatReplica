@@ -23,5 +23,6 @@ urlpatterns = [
     path('search/<str:topic_name>/', views.bookList.as_view()),
     path('info/<int:id>/', views.bookList2.as_view()),
     path('decrease/<int:pk>/', views.bookList2.as_view()),
+    path('update/<int:pk>/', views.bookList.as_view()),
     path('admin/', admin.site.urls),
 ]
